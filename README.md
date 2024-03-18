@@ -12,6 +12,8 @@ Instalação dos programas para começar a programar em Python
 
 
 Obs:
+    SEMPRE INSTALAR O AS BIBLIOTECAS NA PASTA QUE SALVAR O PROJETO
+    
     Para instalar o passo 3, vc precisa seguir https://www.youtube.com/watch?v=MvUMAvmviaE&ab_channel=JOBU
     Depois de realizar o procedimento aciam, é só executar as instalões pelo prompt aberto
 
