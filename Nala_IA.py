@@ -1,21 +1,15 @@
+# PÁGINA DE TESTES PARA O NALA-IA
+
 import speech_recognition as sr
-import pyttsx3
-import pyaudio
-
-audio = sr.Recognizer()
-maquina = pyttsx3.init()
 
 
+#r é o reconhecedor..se eu quiser, posso atribuir outro nome
+r = sr.Recognizer()
 
-try:
-    with sr.Microphone() as source:
-        print('ouvindo..')
-        voz = audio.listen(source)
-        comando = audio.recognize_google(voz, language='pt-BR')
-        comando = comando.lower
-        if 'nala' in comando:
-            print(comando)
-            maquina.say(comando)
-            maquina.runAndWait()
-except:
-    print('Microfone não está ok')
+#abrir o mic
+
+with sr.Microphone() as source:
+    audio = r.listen(source)
+
+    print(r.recognize_google(audio))
+    
